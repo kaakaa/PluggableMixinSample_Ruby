@@ -2,6 +2,9 @@
 
 ```
 [A] => KBD("A")
+[A]+[B] => KBD("A",DOWN)
+           KBD("B",CLICK)
+           KDB("A",UP)
 ```
 
 ## selector

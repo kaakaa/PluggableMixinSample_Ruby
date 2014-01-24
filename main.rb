@@ -9,8 +9,8 @@ out = UwscDSL.compile str
 # write
 File.open('output.txt', 'w') do |f|
 	out.each do |e|
-		e.split(',').each do |s|
-			f.puts s.strip if !s.strip.empty?
+		e.gsub(/\\,/," ").split(',').each do |s|
+			f.puts s.strip.gsub(/ /, ",") if !s.strip.empty?
 		end
 	end
 end
