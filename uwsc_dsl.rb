@@ -17,7 +17,7 @@ class UwscDSL
 
 	def parse(token)
 		# mixin
-		ScriptOutputter.new(token).with BasicFunction do |so|
+		ScriptOutputter.new(token).with BasicFunction, Selector do |so|
 			so.compile
 		end
 	end
