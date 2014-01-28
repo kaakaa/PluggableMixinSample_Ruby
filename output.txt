@@ -1,6 +1,0 @@
-KBD("A")
-KBD("B")
-GETID("メモ帳")
-KBD("A",DOWN)
-KBD("B",CLICK)
-KBD("A",UP)
