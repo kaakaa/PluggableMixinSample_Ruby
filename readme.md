@@ -12,3 +12,9 @@
 ```
 *メモ帳* => GETID("メモ帳")
 ```
+
+## special key
+
+```
+[WIN] => KBD(VK_WIN)
+```

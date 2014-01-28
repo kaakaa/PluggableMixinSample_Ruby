@@ -8,6 +8,9 @@ class ScriptOutputter
 
 	def with(*args) # 可変長引数
 		# args = [BasicFunction, Selector]
+		args.each do |a|
+			p a.class
+		end
 		args.inject(self) { |acc, val| acc.extend val }
 		yield self if block_given?
 	end
